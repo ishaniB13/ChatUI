@@ -1,0 +1,238 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+.nav-bar {
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 70px;
+    border-style: solid;
+    border-width: 0 0 3px 0;
+    border-color: #5a5f85;
+}
+
+.nav-bar .loginbtn {
+    left: 980px;
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+    background-color: #476eee;
+    color: white;
+    width: 120px;
+    font-size: 20px;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.nav-bar .signupbtn {
+    left: 770px;
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+    background-color: #476eee;
+    color: white;
+    width: 150px;
+    font-size: 20px;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.session .show-label .icon i {
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: #292c44;
+}
+
+label {
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+form {
+    padding: 50px 40px;
+    background: #434969;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    width: 300px;
+}
+
+form p {
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: #fff;
+    align-items: center;
+    font-weight: bolder;
+    max-width: 700px;
+    margin-bottom: 70px;
+    font-family: Trebuchet MS;
+}
+
+button {
+    width: auto;
+    min-width: 100px;
+    border-radius: 24px;
+    text-align: center;
+    padding: 15px 40px;
+    margin-top: 5px;
+    background-color: #476eee;
+    color: #fff;
+    font-size: 18px;
+    margin-left: auto;
+    font-weight: 500;
+    box-shadow: 0px 2px 6px -1px #476eee;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 2px 6px -1px #476eee;
+    cursor: pointer;
+}
+
+button:hover:active {
+    transform: scale(0.99);
+}
+
+input {
+    font-size: 17px;
+    padding: 20px 0px;
+    height: 56px;
+    border: none;
+    border-bottom: solid 1px white;
+    background: transparent;
+    width: 280px;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+    color: #fff;
+    font-weight: 400;
+}
+
+input:focus {
+    border-bottom: solid 1px #ffffff;
+    outline: 0;
+    box-shadow: 0 2px 6px -8px #ffffff;
+    cursor: pointer;
+}
+
+.show-label {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.show-label label {
+    position: absolute;
+    top: calc(50% - 7px);
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    padding-left: 44px;
+}
+
+.show-label input {
+    width: 84%;
+    margin-left: auto;
+    display: flex;
+}
+
+.show-label .icon {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    height: 56px;
+    width: 44px;
+    display: flex;
+}
+
+.show-label input:not(:placeholder-shown) {
+    padding: 28px 0px 12px 0px;
+}
+
+.show-label input:not(:placeholder-shown)+label {
+    transform: translateY(-10px);
+    opacity: 0.7;
+}
+
+.show-label input:not(:valid):not(:focus)+label+.icon {
+    animation-name: lift-up;
+    animation-duration: 0.3s;
+}
+
+@keyframes lift-up {
+    0% {
+        transform: translateX(-3px);
+    }
+    20% {
+        transform: translateX(3px);
+    }
+    40% {
+        transform: translateX(-3px);
+    }
+    60% {
+        transform: translateX(3px);
+    }
+    80% {
+        transform: translateX(-3px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+a {
+    margin-left: 225px;
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 14px;
+    margin-bottom: 40px;
+    color: #476eee;
+}
+
+.session {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    margin: auto auto;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, .12);
+}
+
+.left {
+    width: 450px;
+    height: auto;
+    min-height: 100%;
+    position: relative;
+    background-image: url("7c1dab157f34e603487b5d0b057da448.gif");
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
